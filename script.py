@@ -15,6 +15,6 @@ for i in range(len(list_csv)):
             list_csv[i][4] = checker[c]
             print(list_csv[i][4])
 
-with open('people.csv', 'w', newline='') as csvfile2:
+with open('people_write.csv', 'w', newline='') as csvfile2:
     writer = csv.writer(csvfile2)
     writer.writerows(list_csv)
